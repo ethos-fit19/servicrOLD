@@ -1,7 +1,4 @@
-# servicr
+# Servicr
 
-Service Provider Solution
-
-## Getting Started
-
+**Service Provider Solution**
 2nd Year Project - Group Ethos
