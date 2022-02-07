@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,21 +12,60 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Servicr',
-      theme: ThemeData(fontFamily: 'Nunito'),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Servicr"),
-        ),
-        body: Center(
-          child: Column(
-            children: <Widget>[
-              Image.asset('assets/images/servicr_logo.png'),
-              Text(
-                  "Find service providers near you for all your needs - Home Services, Appliance & Electronic Repairs, Beauticians and much more.")
-            ],
-          ),
-        ),
+      theme: ThemeData(
+        fontFamily: 'Satoshi',
+      ),
+      home: SafeArea(
+        child: Scaffold(
+            body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(20.0),
+              child: Image.asset(
+                './assets/images/servicr_logo.png',
+                width: 200.0,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+              child: Text(
+                'Find service professionals near you for all your needs!',
+                style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(10.0),
+              child: Image.asset(
+                './assets/images/Worker.png',
+                width: 200,
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(20.0),
+              child: ElevatedButton(
+                child: Text('Log in'),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(50), // NEW
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 20.0),
+              child: OutlinedButton(
+                child: Text('Register'),
+                onPressed: () {},
+                style: OutlinedButton.styleFrom(
+                  minimumSize: const Size.fromHeight(50), // NEW
+                ),
+              ),
+            ),
+          ],
+        )),
       ),
     );
   }
