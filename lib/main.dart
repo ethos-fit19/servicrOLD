@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Servicr',
       theme: ThemeData(
-        fontFamily: 'Satoshi',
+        fontFamily: 'Nunito',
       ),
       home: SafeArea(
         child: Scaffold(

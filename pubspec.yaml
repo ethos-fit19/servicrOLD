@@ -61,14 +61,6 @@ flutter:
         - asset: assets/fonts/Newsreader-Regular.ttf
         - asset: assets/fonts/Newsreader-Bold.ttf
           weight: 700
-    - family: Satoshi
-      fonts:
-        - asset: assets/fonts/Satoshi-Regular.otf
-        - asset: assets/fonts/Satoshi-Bold.otf
-          weight: 700
-    - family: Gam
-      fonts:
-        - asset: assets/fonts/Gambarino-Regular.otf
 
   assets:
     - assets/images/
