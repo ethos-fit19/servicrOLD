@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Servicr',
       theme: ThemeData(
-        fontFamily: 'Nunito',
+        fontFamily: 'Outfit',
       ),
       home: SafeArea(
         child: Scaffold(
@@ -34,7 +33,7 @@ class MyApp extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
               child: Text(
                 'Find service professionals near you for all your needs!',
-                style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.w600),
               ),
             ),
             Container(

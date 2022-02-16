@@ -51,15 +51,15 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   fonts:
-    - family: Nunito
-      fonts:
-        - asset: assets/fonts/Nunito-Regular.ttf
-        - asset: assets/fonts/Nunito-Bold.ttf
-          weight: 700
     - family: Newsreader
       fonts:
         - asset: assets/fonts/Newsreader-Regular.ttf
         - asset: assets/fonts/Newsreader-Bold.ttf
+          weight: 700
+    - family: Outfit
+      fonts:
+        - asset: assets/fonts/Outfit-Regular.ttf
+        - asset: assets/fonts/Outfit-Bold.ttf
           weight: 700
 
   assets:
